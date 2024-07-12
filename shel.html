@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminar Technolab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='shel.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0" />
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo_luminar.png') }}" alt="Luminar Logo" width="300px" height="80px">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#placements">Placements</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <content>
+        <h1>Kerala's No.1</h1>
+        <h3>Best Software Training Institute in <br> Kochi (Cochin) | Calicut (Kozhikode)</h3>
+        <img src="{{ url_for('static', filename='Lady.png') }}" alt="Lady" id="lady-image">
+    </content>
+    <main>    
+        <p>
+            Luminar Technolab is the No.1 Software Training <br> 
+            Institute in Kochi & Mavoor Road Calicut, offering  <br>
+            you job oriented courses on Data Science, Data <br>
+            Analytics, Machine Learning, Python, Big Data & <br>
+            Other Certified IT programs. <br>
+            More info:👉
+            <a href="https://www.luminartechnolab.com/">Click Here!</a>
+        </p>
+    </main>
+    <div id="chatbot">
+        <button id="chatbot-btn">Chat with us!</button>
+        <div id="chatbot-window" style="display: none;">
+            <div id="chat-window">
+                <div id="messages">
+                    <div class="message-container">
+                        <span class="bot-icon material-symbols-outlined">smart_toy</span>
+                        <div class="bot-message">
+                            <span class="message-text">Hey! Welcome to Luminar Technolab. How can I assist you?</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="input-area">
+                    <input type="text" id="user-input" placeholder="Type your message...">
+                    <button id="send-btn"><span class="material-symbols-outlined">send</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('chatbot-btn').addEventListener('click', function() {
+            var chatbotWindow = document.getElementById('chatbot-window');
+            chatbotWindow.style.display = chatbotWindow.style.display === 'none' ? 'block' : 'none';
+        });
+
+        document.getElementById('send-btn').addEventListener('click', async function() {
+            var userInput = document.getElementById('user-input').value;
+            var messages = document.getElementById('messages');
+            var userMessageContainer = document.createElement('div');
+            userMessageContainer.className = 'message-container';
+            userMessageContainer.innerHTML = '<div class="user-message"><span class="message-text">' + userInput + '</span></div><span class="user-icon material-symbols-outlined">person</span>';
+            messages.appendChild(userMessageContainer);
+            document.getElementById('user-input').value = '';
+
+            var response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: userInput })
+            });
+            var data = await response.json();
+            data.forEach(function(msg) {
+                var botMessageContainer = document.createElement('div');
+                botMessageContainer.className = 'message-container';
+                botMessageContainer.innerHTML = '<span class="bot-icon material-symbols-outlined">smart_toy</span><div class="bot-message"><span class="message-text">' + msg.text + '</span></div>';
+                messages.appendChild(botMessageContainer);
+            });
+        });
+    </script>
+</body>
+</html>

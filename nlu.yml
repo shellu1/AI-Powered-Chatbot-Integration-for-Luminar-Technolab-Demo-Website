@@ -1,0 +1,197 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: out_of_scope
+  examples: |
+    - I want to fly to the moon
+    - Can you bake me a cake?
+    - Sing a song for me
+    - Can you accompany me to school?
+
+- intent: course_information
+  examples: |
+    - What IT courses do you offer?
+    - Tell me about your courses.
+    - Do you have programming courses?
+    - courses
+    - course
+
+- intent: contact
+  examples: |
+    - How can I contact the administration?
+    - What is your email address?
+    - contact
+
+- intent: affiliated
+  examples: |  
+    - Is Luminar Technolab affiliated?
+    - Which university does luminar technolab affiliated to?
+    - affiliation
+
+- intent: enroll
+  examples: |
+    - How can I enroll in a course?
+    - What is the admission process?
+    - How to enroll?
+    - enroll
+
+- intent: prerequisites
+  examples: |
+    - Are there any prerequisites for your courses?
+    - What are the prerequisites to join in your courses?
+    - prerequisites
+
+- intent: location
+  examples: |
+    - Where is your location?
+    - location
+
+- intent: software_testing
+  examples: |
+    - Software Testing & Training
+    - Software Testing
+    - Can you provide details on the Software Testing & Training course?
+    - When do the classes for Software Testing & Training start?
+    - upcoming batch date for Software Testing & Training Course
+    - How long is the Software Testing & Training course?
+    - What is the duration of the Software Testing & Training course?
+    - What are the class timings of Software Testing & Training Course?
+    - class timings for Software Testing & Training Course
+    - What is the fee for the Software Testing & Training course?
+    - How much do your Software Testing & Training course cost?
+
+- intent: data_science
+  examples: |
+    - Python Data Science
+    - Datascience
+    - Data Science
+    - Can you provide details on the Python Data Science course?
+    - When do the classes for Python Data Science start?
+    - upcoming batch date for Python Data Science course
+    - How long is the Python Data Science course?
+    - What is the duration of the Python Data Science course?
+    - What are the class timings of Python Data Science course?
+    - class timings for Python Data Science course
+    - What is the fee for the Python Data Science course?
+    - How much do your Python Data Science course cost?
+
+- intent: mearn_stack
+  examples: |
+    - MEA(R)N Stack
+    - mearn stack
+    - mean stack
+    - mern stack
+    - Can you provide details on the MEA(R)N Stack course?
+    - When do the classes for MEA(R)N Stack start?
+    - upcoming batch date for MEA(R)N Stack course
+    - How long is the MEA(R)N Stack course?
+    - What is the duration of the MEA(R)N Stack course?
+    - What are the class timings of MEA(R)N Stack course?
+    - class timings for MEA(R)N Stack course
+    - What is the fee for the MEA(R)N Stack course?
+    - How much do your MEA(R)N Stack course cost?
+ 
+- intent: python_django
+  examples: |
+    - python Django Full Stack
+    - python
+    - python django
+    - Can you provide details on the python Django Full Stack course?
+    - When do the classes for python Django Full Stack start?
+    - upcoming batch date for python Django Full Stack course
+    - How long is the python Django Full Stack course?
+    - What is the duration of the python Django Full Stack course?
+    - What are the class timings for python Django Full Stack course? 
+    - class timings for python Django Full Stack course
+    - What is the fee for the python Django Full Stack course?
+    - How much do your python Django Full Stack course cost?
+
+- intent: asp_net
+  examples: |
+    - Asp.net MVC with Full Stack
+    - asp.net
+    - Can you provide details on the Asp.net MVC with Full Stack course?
+    - When do the classes of Asp.net MVC with Full Stack start?
+    - upcoming batch date for Asp.net MVC with Full Stack course
+    - How long is the Asp.net MVC with Full Stack course?
+    - What is the duration of the Asp.net MVC with Full Stack course?
+    - What are the class timings of Asp.net MVC with Full Stack course?
+    - class timings for Asp.net MVC with Full Stack course
+    - What is the fee for the Asp.net MVC with Full Stack course?
+    - How much do your Asp.net MVC with Full Stack course cost?
+
+- intent: flutter
+  examples: |
+    - Flutter
+    - Can you provide details on the Flutter course?
+    - When do the classes for Flutter start?
+    - upcoming batch date for Flutter course
+    - How long is the Flutter course?
+    - What is the duration of the Flutter course?
+    - What are the class timings of Flutter course?
+    - class timings for Flutter course
+    - What is the fee for the Flutter course?
+    - How much do your Flutter course cost?
+
+- intent: java_spring
+  examples: |
+    - Java Spring Full Stack
+    - java spring
+    - js
+    - Can you provide details on the Java Spring Full Stack course?
+    - When do the classes for Java Spring Full Stack start?
+    - upcoming batch date for Java Spring Full Stack course
+    - How long is the FJava Spring Full Stack course?
+    - What is the duration of the Java Spring Full Stack course?
+    - What are the class timings of Java Spring Full Stack course?
+    - class timings for Java Spring Full Stack course
+    - What is the fee for the Java Spring Full Stack course?
+    - How much do your Java Spring Full Stack course cost?
+
+
+

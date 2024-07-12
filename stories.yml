@@ -1,0 +1,68 @@
+version: "3.1"
+
+stories:
+
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_happy
+
+- story: fallback path
+  steps:
+    - intent: out_of_scope
+    - action: utter_default
+
+- story: luminar path
+  steps:
+  - intent: course_information
+  - action: utter_course
+  - intent: contact
+  - action: utter_contact
+  - intent: affiliated
+  - action: utter_affiliated
+
+- story: luminar path 1
+  steps:
+  - intent: enroll
+  - action: utter_enroll
+  - intent: prerequisites
+  - action: utter_prerequisites
+  - intent: location
+  - action: utter_location
+
+- story: software path 
+  steps:
+  - intent: software_testing
+  - action: utter_testing
+
+- story: data path
+  steps:
+  - intent: data_science
+  - action: utter_data
+
+- story: mearn path
+  steps:
+  - intent: mearn_stack
+  - action: utter_mearn
+
+- story: django path
+  steps:
+  - intent: python_django
+  - action: utter_django
+
+- story: asp path
+  steps:
+  - intent: asp_net
+  - action: utter_asp
+
+- story: flutter path
+  steps:
+  - intent: flutter
+  - action: utter_flutter
+
+- story: jspring path
+  steps:
+  - intent: java_spring
+  - action: utter_jspring

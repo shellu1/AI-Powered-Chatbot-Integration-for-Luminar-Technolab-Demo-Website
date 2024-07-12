@@ -1,0 +1,186 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - bot_challenge
+  - out_of_scope
+  - course_information
+  - contact
+  - affiliated
+  - enroll
+  - prerequisites
+  - location
+  - software_testing
+  - data_science
+  - mearn_stack
+  - python_django
+  - asp_net
+  - flutter
+  - java_spring
+
+responses:
+  utter_greet:
+  - text: "Hi! Thank You for contacting us. How can I help you?"
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a luminar chat bot, powered by Rasa."
+
+  utter_default:
+  - text: "I'm sorry, I didn't understand that. Can you please rephrase?"
+
+  utter_course:
+  - text: |
+      We provide courses like Software Testing Training(Manual & Automation), Python
+      Data Science(ML,AI & Power BI), MEA(R)N Stack Web Development Expert(Angular &
+      React), Python Django(React)Full Stack Web Development Expert, Asp.net MVC with
+      (Angular)Full Stack, Flutter, Java Spring Full Stack Development. 
+      
+      Which course are you interested in?
+
+  utter_contact:
+  - text: "You can contact our administration through (Enquiry: contact@luminartechnolab.com) & (Placement Cell: hr@luminartechnolab.com) or directly reach us at (Call: +91 8086 651 651)"
+
+  utter_affiliated:
+  - text: |
+      LuminarTechnolab is affiliated to National Council for Technology and Training (NACTET).
+      NACTET 🎓 certificates have got high credibility among employers in India and abroad
+      especially in the Middle East and other parts of the world.
+ 
+  utter_enroll:
+  - text: "You can enroll in a course by filling out the admission form provided in our website."
+
+  utter_prerequisites:
+  - text: "There is no prerequisites. Anyone from IT/Non-IT Background can join our courses."
+
+  utter_location:
+  - text: "In kerala, we have branches at Cochin and Calicut."
+
+  utter_testing: 
+  - text: |
+      You will learn- Manual Testing, Java foundations, Mobile Testing,
+      Automation Testing, Selenium IDE, Selenium Web driver, Selenium 
+      Advanced Web driver, Selenium Grid, TestNG, SQL workshop, Performance
+      Testing, JMeter-Advanced, POSTMAN, API Testing, JIRA
+
+      Next Batches-
+      Cochin: July 17th 2024 (Offline & Online),
+      Calicut: July 17th 2024 (Offline Only)
+
+      Course Duration- 4 Months, 5 Days a Week
+      
+      Class Timings- 1.5 t0 2 Hours/day
+
+      Course Fee- EMI Mode: 41000,
+      One time Payment mode: 37500
+      
+  utter_data: 
+  - text: |
+      You will learn- Introduction to AWS, Amazon Identity and Access Management (IAM),
+      Elastic Computing (EC2), Simple Storage Service (S3)
+     
+      Next Batches-
+      Cochin : Aug 12th 2024 (Offline & Online),
+      Calicut : Sep 18th 2024 (Offline)
+      
+      Course Duration- 7 Months, 5 Days a Week
+      
+      Class Timings- 1.5 to 2 Hours/day
+    
+      Course Fee- EMI Mode : 72000,
+      One time Payment mode : 64500
+
+  utter_mearn:
+  - text: |
+      You will learn- HTML, CSS, Bootstrap, Javascript, Typescript, Git, Angular,
+      React.js, Node.js, Express.js & MongoDB
+
+      Next Batches-
+      Cochin : Aug 12th 2024 (Offline & Online),
+      Calicut : July 19th 2024 (Offline)
+      
+      Course Duration- 6 Months, 5 Days a Week
+      
+      Class Timings- 1.5 to 2 Hours/day
+
+      Course Fee- EMI Mode : 55000,
+      One time Payment mode : 49500
+
+  utter_django:
+  - text: |
+      You will learn- Core Python, Basics of Programming, Unix Commands, Advanced Python,
+      Django Framework, REST API, Git, ReactJs, Web Concepts & Tools
+
+      Next Batches-
+      Cochin : July 17th 2024 (Offline & Online),
+      Calicut : July 17th 2024 (Offline Only)
+      
+      Class Duration- 6.5 Months, 5 Days a Week
+      
+      Class Timings- 2 Hours/day
+      
+      Course Fee- EMI Mode : 45000,
+      One time Payment mode : 39500
+
+  utter_asp:
+  - text: |
+      You will learn- Introduction, Git installation, Repository creation in GitHub, 
+      Commands in git, Real time code integration
+
+      Next Batches- 
+      Cochin : July 17th 2024 (Offline & Online),
+      Calicut : Not Available
+      
+      Class Duration- 5 Months, 5 Days a Week
+      
+      Class Timings- 2 Hours/day
+
+      Course Fee- EMI Mode : 45000,
+      One time Payment mode : 39500
+
+  utter_flutter:
+  - text: |
+      You will learn- Dart, Flutter Introduction to Android, Android Studio, vscode,
+      AndroidManifest.xml, Directories, Layout Designing, Basics & Intents, figma basic,
+      UI Designing, Composite & Custom Views, Time, Date & Dialog Boxes, Media & Menu,
+      Fragment & Material Designs, Notifications, Telephony & Connectivity, Internal 
+      Storage & External Storage, Async Task, Parsing & Shared Preferences, SQFite Database,
+      Hive Database, Firebase, API Testing Using Postman, swagger, Web Services, Design Patterns,
+      GitHub ,bundle creation, mini projects, Main Project, publish to Play store
+
+      Next Batches-
+      Cochin : July 17th 2024 (Offline & Online),
+      Calicut : July 17th 2024 (Offline Only)
+      
+      Class Duration- 5 months
+      
+      Class Timings- 2 Hours/day
+
+      Course Fee- EMI Mode : 41000,
+      One time Payment mode : 37500
+
+  utter_jspring:
+  - text: |
+      You will learn- Java Fundamentals, OOPS, Advanced Java, Java Database Programming, 
+      JDK New Features, JAVA Enterprise Edition (Java EE), JPA & Hibernate ,Spring & Spring Boot
+
+      Next Batches- 
+      Cochin : Aug 21st 2024 (09:00 AM - 11:00 AM),
+      Calicut : Not Available
+      
+      Class Duration- 4 Months, 5 Days a Week
+      
+      Class Timings- 2 Hours/day
+
+      Course Fee- EMI Mode : 41000,
+      One time Payment mode : 37500
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
